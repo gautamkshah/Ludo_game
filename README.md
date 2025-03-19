@@ -1,100 +1,66 @@
-<<<<<<< HEAD
-# Ludo_game
-=======
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<h1>Ludo Game: React Native Complex Animations</h1>
 
-# Getting Started
+<p>🚀 <strong>Built with React Native</strong> – Experience smooth and optimized performance across both Android and iOS platforms.</p>
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+<p>🎨 <strong>Stunning UI & Game Experience</strong> – Immerse yourself in a visually appealing design with engaging animations that bring the game to life.</p>
 
-## Step 1: Start Metro
+<p>🎭 <strong>Advanced Animations</strong> – Enjoy seamless transitions and dynamic movements, including dice rolls, token movements, and victory celebrations. Every animation is designed to enhance the gameplay experience, making it more interactive and enjoyable.</p>
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+<p>👥 <strong>4-Player Offline Mode</strong> – Play with friends and family without needing an internet connection. Perfect for gatherings and fun moments together.</p>
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+<p>💾 <strong>Persistent Game State</strong> – Save your game progress and resume anytime. Never lose your game state, even if you close the app.</p>
 
-```sh
-# Using npm
-npm start
+<p>🧠 <strong>Hardcore Game Logic</strong> – The game follows accurate Ludo rules and mechanics, ensuring a true-to-life Ludo experience. From token movements to winning conditions, every detail is meticulously implemented.</p>
 
-# OR using Yarn
-yarn start
-```
+<p>🎮 <strong>Smooth Gameplay</strong> – Enjoy a lag-free and immersive user experience, thanks to optimized performance and efficient code.</p>
 
-## Step 2: Build and run your app
+<h2>Features</h2>
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+<ul>
+  <li><strong>React Native</strong>: Built using React Native for cross-platform compatibility, ensuring a consistent experience on both Android and iOS.</li>
+  <li><strong>Engaging Animations</strong>: Complex animations for dice rolls, token movements, and victory sequences. Each animation is designed to be smooth and visually appealing, enhancing the overall gameplay experience.</li>
+  <li><strong>Sound Effects</strong>: Realistic sound effects for dice rolls, token movements, and game events. The sound design adds an extra layer of immersion to the game.</li>
+  <li><strong>Offline Play</strong>: Play with up to 4 players offline. No internet connection is required, making it perfect for on-the-go fun.</li>
+  <li><strong>Game State Management</strong>: Save and resume your game at any point. The app automatically saves your progress, so you can pick up right where you left off.</li>
+  <li><strong>Accurate Game Logic</strong>: Faithful to the traditional Ludo rules, including token movements, safe zones, and winning conditions. The game logic is designed to provide an authentic Ludo experience.</li>
+</ul>
 
-### Android
+<h2>Getting Started</h2>
 
-```sh
-# Using npm
-npm run android
+<p>To get started with the project, follow these steps:</p>
 
-# OR using Yarn
-yarn android
-```
+<ol>
+  <li><strong>Clone the repository</strong>:
+    <pre><code>git clone https://github.com/gautamkshah/Ludo_game.git</code></pre>
+  </li>
+  <li><strong>Navigate to the project directory</strong>:
+    <pre><code>cd Ludo_game</code></pre>
+  </li>
+  <li><strong>Install dependencies</strong>:
+    <pre><code>npm install</code></pre>
+  </li>
+  <li><strong>Run the app</strong>:
+    <pre><code>npx react-native run-android
+# or
+npx react-native run-ios</code></pre>
+  </li>
+</ol>
 
-### iOS
+<h2>Contributing</h2>
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+<p>We welcome contributions! Please read our <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for details on how to get started.</p>
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+<h2>License</h2>
 
-```sh
-bundle install
-```
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
-Then, and every time you update your native dependencies, run:
+<h2>Acknowledgments</h2>
 
-```sh
-bundle exec pod install
-```
+<ul>
+  <li><strong>React Native Community</strong> for the amazing framework.</li>
+  <li><strong>All Contributors</strong> who have helped in making this project better.</li>
+</ul>
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+<hr>
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<p>Enjoy the game! 🎲</p>
