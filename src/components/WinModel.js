@@ -29,7 +29,6 @@ const WinModel = ({winner}) => {
   };
 
   const handleHome = () => {
-  
     dispatch(resetGame());
     dispatch(announceWinner(null));
     resetAndNavigate('HomeScreen');
@@ -48,12 +47,12 @@ const WinModel = ({winner}) => {
       <LinearGradient
         colors={['#0f0c29', '#302b63', '#24243e']}
         style={styles.gradientContainer}>
-        <View>
+        <View style={styles.content}>
           <View style={styles.pileContainer}>
             <Pile player={winner} color={colorPlayer[winner-1]} />
           </View>
           <Text style={styles.congratsText}>
-            Congratulations Player {winner}
+            Congratulations Player {winner}!
           </Text>
           <LottieView
             autoPlay
@@ -69,8 +68,10 @@ const WinModel = ({winner}) => {
             source={FireWorks}
             style={styles.fireWorksAnimation}
           />
-          <GradientButton title="NEW GAME" onPress={handleNewGame} />
-          <GradientButton title="HOME" onPress={handleHome} />
+          <View style={styles.buttonContainer}>
+            <GradientButton title="NEW GAME" onPress={handleNewGame} />
+            <GradientButton title="HOME" onPress={handleHome} />
+          </View>
         </View>
       </LinearGradient>
       <LottieView
@@ -88,25 +89,27 @@ const styles = StyleSheet.create({
   modal: {
     justifyContent: 'center',
     alignItems: 'center',
-    // paddingBottom:150
-    
   },
   gradientContainer: {
     borderRadius: 20,
-    width: '96%',
+    width: '90%',
     borderWidth: 2,
     justifyContent: 'center',
-    paddingBottom: 20,
+    paddingVertical: 30,
     alignItems: 'center',
     borderColor: 'gold',
+    overflow: 'hidden',
+    position: 'relative', // Ensure relative positioning for child elements
   },
   content: {
     width: '100%',
     alignItems: 'center',
+    zIndex: 1, // Ensure content is above the fireworks
   },
   pileContainer: {
     width: 90,
     height: 40,
+    marginBottom: 20,
   },
   trophyAnimation: {
     height: 200,
@@ -117,10 +120,9 @@ const styles = StyleSheet.create({
     height: 500,
     width: 500,
     position: 'absolute',
-    // zIndex: -1,
-    marginTop: 20,
-    alignContent: 'center',
-    marginLeft: -150,
+    top: -100,
+    left: -50,
+    zIndex: -1, // Ensure fireworks are behind the content
   },
   girlAnimation: {
     height: 350,
@@ -131,10 +133,16 @@ const styles = StyleSheet.create({
     zIndex: 99,
   },
   congratsText: {
-    fontSize: 18,
+    fontSize: 24,
     color: 'white',
     fontFamily: 'Philosopher-Bold',
     marginTop: 10,
+    textAlign: 'center', // Center the text horizontally
+    flexShrink: 1, // Prevent text from wrapping
+  },
+  buttonContainer: {
+    width: '80%',
+    marginTop: 30,
   },
 });
 

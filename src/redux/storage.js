@@ -12,9 +12,9 @@ const reduxStorage={
       },
       removeItem: (key) =>{
             store.delete(key);
-            return Promise.resolve(true);
+            return Promise.resolve();
       },
 
-}
+};
 
 export default reduxStorage;

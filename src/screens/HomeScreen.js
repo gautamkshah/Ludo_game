@@ -153,7 +153,7 @@ const HomeScreen = () => {
       <View style={styles.imgContainer}>
         <Image source={Logo} style={styles.img} />
       </View>
-      {currentPositions === 0 && renderButton('RESUME', handleResumePress)}
+      {currentPositions != 0 && renderButton('RESUME', handleResumePress)}
       {renderButton('NEW GAME', handleNewGame)}
       {renderButton('VS CPU', () =>
         showStyledAlert('Coming Soon!', 'Click on New Game')
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   },
   artist: {
     position: 'absolute',
-    bottom: 80,
+    bottom: 40,
     color: 'white',
     fontWeight: '800',
     opacity: 0.5,
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
   },
   witchContainer: {
     position: 'absolute',
-    top: '60%',
+    top: '65%',
     left: '24%',
   },
 });

@@ -31,10 +31,10 @@ export const initialState = {
       chancePlayer: 1,
       diceNo: 1,
       isDiceRolled: false,
-      winner: null,
       pileSelectionPlayer: -1,
       cellSelectionPlayer: -1,
       touchDiceBlock: false,
       currentPositions: [],
       firework: false,
+      winner: null,
 };
